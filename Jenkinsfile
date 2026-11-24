@@ -3,10 +3,12 @@ pipeline{
 
     stages{
         stage("Git"){
-            git(
-                url:"",
+           steps{
+             git(
+                url:"https://github.com/Abuappash/Jenkins-Jenkinsfile.git",
                 branch:"main",
             )
+           }
         }
 
         stage("Hello"){
