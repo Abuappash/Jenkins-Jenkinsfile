@@ -16,5 +16,10 @@ pipeline{
                 echo "Hello Pipeline from Jenkins File"
             }
         }
+        Stege ("Git Pulgin"){
+            steps{
+                echo "Git connect successfully"
+            }
+        }
     }
 }
